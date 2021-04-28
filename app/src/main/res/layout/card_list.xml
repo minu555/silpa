@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="96dp"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="12dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:id="@+id/cardview"
+    card_view:cardBackgroundColor="#FFFF"
+    card_view:cardCornerRadius="8dp"
+    card_view:contentPadding="10dp"
+    android:foreground="?selectableItemBackground"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/exchange"
+            android:layout_width="137dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="20dp"
+
+            android:text="exchangename"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/ltp"
+            android:layout_width="100dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="106dp"
+
+            android:layout_marginLeft="106dp"
+            android:layout_toEndOf="@+id/exchange"
+            android:layout_toRightOf="@+id/exchange"
+            android:text="ltp"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/change"
+            android:layout_width="45dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/ltp"
+            android:layout_marginLeft="266dp"
+            android:layout_marginTop="0dp"
+            android:text="change"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/chaper"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ltp"
+            android:layout_toEndOf="@+id/change"
+            android:textColor="#008000"
+
+
+            android:text="chaper"
+            android:textSize="12dp"
+            android:layout_toRightOf="@+id/change" />
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
